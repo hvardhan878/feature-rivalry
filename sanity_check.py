@@ -1,6 +1,6 @@
 """
 Sanity check — verifies every component of the Feature Rivalry pipeline.
-Should complete in under 2 minutes on M1 Pro.
+Should complete in under a few minutes when CUDA is available.
 Run: python sanity_check.py
 """
 
@@ -20,14 +20,14 @@ def fail(n, e):
     sys.exit(1)
 
 
-# ─── Step 1: Torch + MPS ────────────────────────────────────────────────────
-step(1, "Torch + MPS check")
+# ─── Step 1: Torch + CUDA ────────────────────────────────────────────────────
+step(1, "Torch + CUDA check")
 try:
     import torch
-    assert torch.backends.mps.is_available(), "MPS not available"
-    x = torch.tensor([1.0, 2.0]).to("mps")
-    assert x.device.type == "mps"
-    print("PASS: MPS available and working")
+    assert torch.cuda.is_available(), "CUDA not available"
+    x = torch.tensor([1.0, 2.0]).to("cuda")
+    assert x.device.type == "cuda"
+    print("PASS: CUDA available and working")
 except Exception as e:
     fail(1, e)
 
@@ -38,8 +38,8 @@ try:
     model, tokenizer = load_model_and_tokenizer("google/gemma-2-2b-it")
     assert model is not None
     first_param_device = next(model.parameters()).device.type
-    assert first_param_device == "mps", f"Model on wrong device: {first_param_device}"
-    print("PASS: Model loaded on MPS")
+    assert first_param_device == "cuda", f"Model on wrong device: {first_param_device}"
+    print("PASS: Model loaded on CUDA")
 except Exception as e:
     fail(2, e)
 
@@ -48,8 +48,8 @@ step(3, "Single forward pass check")
 try:
     prompt = "Q: What is the capital of France?\nA:"
     inputs = tokenizer(prompt, return_tensors="pt")
-    input_ids = inputs["input_ids"].to("mps")
-    attention_mask = inputs["attention_mask"].to("mps")
+    input_ids = inputs["input_ids"].to("cuda")
+    attention_mask = inputs["attention_mask"].to("cuda")
     with torch.no_grad():
         output = model.generate(input_ids, attention_mask=attention_mask,
                                 max_new_tokens=5, do_sample=False)
@@ -65,8 +65,8 @@ try:
     from model.hooks import ActivationCache
     test_layers = [0, 10, 24]
     inputs = tokenizer("Q: What is the capital of France?\nA:", return_tensors="pt")
-    input_ids = inputs["input_ids"].to("mps")
-    attention_mask = inputs["attention_mask"].to("mps")
+    input_ids = inputs["input_ids"].to("cuda")
+    attention_mask = inputs["attention_mask"].to("cuda")
     with ActivationCache(model, test_layers) as cache:
         with torch.no_grad():
             model.generate(input_ids, attention_mask=attention_mask,
@@ -91,8 +91,8 @@ try:
     )
     assert sae is not None
     inputs = tokenizer("Q: What is the capital of France?\nA:", return_tensors="pt")
-    input_ids = inputs["input_ids"].to("mps")
-    attention_mask = inputs["attention_mask"].to("mps")
+    input_ids = inputs["input_ids"].to("cuda")
+    attention_mask = inputs["attention_mask"].to("cuda")
     with ActivationCache(model, [10]) as cache:
         with torch.no_grad():
             model.generate(input_ids, attention_mask=attention_mask,

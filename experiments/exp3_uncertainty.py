@@ -49,8 +49,8 @@ def run_exp3(
 
         prompt = f"Q: {item['question']}\nA:"
         inputs = tokenizer(prompt, return_tensors="pt")
-        input_ids = inputs["input_ids"].to("mps")
-        attention_mask = inputs["attention_mask"].to("mps")
+        input_ids = inputs["input_ids"].to("cuda")
+        attention_mask = inputs["attention_mask"].to("cuda")
 
         with torch.no_grad():
             # Logits for next-token softmax confidence
@@ -87,7 +87,7 @@ def run_exp3(
                 "is_correct": is_correct,
             }
         )
-        torch.mps.empty_cache()
+        torch.cuda.empty_cache()
 
         # Checkpoint every 10 prompts
         if len(exp3_results) % 10 == 0:

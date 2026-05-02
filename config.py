@@ -34,8 +34,8 @@ LAYERS_TO_ANALYZE = list(range(0, 26, 2))  # 13 layers: 0,2,4,...,24
 TOP_K_RIVAL_PAIRS = 50
 STEERING_MULTIPLIER = 20.0
 
-DEVICE = "mps"
-DTYPE = torch.float32   # bfloat16 has incomplete MPS support
+DEVICE = "cuda"
+DTYPE = torch.bfloat16
 HIDDEN_DIM = 2304       # Gemma-2-2B hidden dimension
 N_FEATURES = 16384      # Gemma Scope SAE width
 

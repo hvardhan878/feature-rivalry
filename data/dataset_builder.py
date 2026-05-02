@@ -715,8 +715,8 @@ def measure_answer_entropy(
     """
     prompt = f"Q: {question}\nA:"
     inputs = tokenizer(prompt, return_tensors="pt")
-    input_ids = inputs["input_ids"].to("mps")
-    attention_mask = inputs["attention_mask"].to("mps")
+    input_ids = inputs["input_ids"].to("cuda")
+    attention_mask = inputs["attention_mask"].to("cuda")
 
     answers = []
     for _ in range(n_samples):
@@ -733,7 +733,7 @@ def measure_answer_entropy(
         decoded = tokenizer.decode(generated.cpu(), skip_special_tokens=True)
         first_word = decoded.strip().split()[0].lower() if decoded.strip() else ""
         answers.append(first_word)
-        torch.mps.empty_cache()
+        torch.cuda.empty_cache()
 
     counts = Counter(answers)
     total = sum(counts.values())

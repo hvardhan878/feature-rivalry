@@ -50,8 +50,8 @@ def run_exp1(
         ):
             prompt = f"Q: {item['question']}\nA:"
             inputs = tokenizer(prompt, return_tensors="pt")
-            input_ids = inputs["input_ids"].to("mps")
-            attention_mask = inputs["attention_mask"].to("mps")
+            input_ids = inputs["input_ids"].to("cuda")
+            attention_mask = inputs["attention_mask"].to("cuda")
 
             with ActivationCache(model, layers_to_analyze) as cache:
                 with torch.no_grad():
@@ -70,7 +70,7 @@ def run_exp1(
                     features = get_feature_activations(sae, hidden)
                     layer_feature_matrix[layer].append(features)
 
-            torch.mps.empty_cache()
+            torch.cuda.empty_cache()
 
             # Save checkpoint every 100 prompts
             if (i + 1) % 100 == 0:

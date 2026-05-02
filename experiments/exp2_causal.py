@@ -77,8 +77,8 @@ def run_exp2(
         for item in test_prompts:
             prompt = f"Q: {item['question']}\nA:"
             inputs = tokenizer(prompt, return_tensors="pt")
-            input_ids = inputs["input_ids"].to("mps")
-            attention_mask = inputs["attention_mask"].to("mps")
+            input_ids = inputs["input_ids"].to("cuda")
+            attention_mask = inputs["attention_mask"].to("cuda")
 
             # --- Baseline generation ---
             with torch.no_grad():
@@ -96,7 +96,7 @@ def run_exp2(
 
             def make_steer_hook(vec_numpy):
                 """Return a forward hook that adds a steering vector to the residual stream."""
-                vec_tensor = torch.from_numpy(vec_numpy).float().to("mps")
+                vec_tensor = torch.from_numpy(vec_numpy).float().to("cuda")
 
                 def hook(module, input, output):
                     steered = output[0].clone()
@@ -152,7 +152,7 @@ def run_exp2(
             flip_count_B += int(flipped_B)
             flip_count_random += int(flipped_rand)
             total += 1
-            torch.mps.empty_cache()
+            torch.cuda.empty_cache()
 
         result = {
             "feature_i": feat_A,

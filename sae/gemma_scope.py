@@ -24,7 +24,7 @@ def load_sae(layer_idx: int, release: str, sae_id: str):
         sae_id=sae_id,
     )
 
-    # SAELens loads in bfloat16 by default; cast to float32 for MPS compatibility
+    # SAELens loads in bfloat16 by default; cast to float32 for CPU-side encoder
     sae = sae.to(torch.float32)
     # Keep SAE on CPU — hidden states will be moved to CPU before encoding
     sae = sae.cpu()
