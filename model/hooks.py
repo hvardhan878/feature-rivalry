@@ -19,13 +19,13 @@ class ActivationCache:
                     hidden = output[0] if isinstance(output, (tuple, list)) else output
                     if hidden.dim() == 3:
                         # (batch, seq_len, hidden_dim) — standard case
-                        self._cache[idx] = hidden[0, -1, :].detach().cpu().numpy()
+                        self._cache[idx] = hidden[0, -1, :].detach().cpu().float().numpy()
                     elif hidden.dim() == 2:
                         # (seq_len, hidden_dim) — batch dim already squeezed
-                        self._cache[idx] = hidden[-1, :].detach().cpu().numpy()
+                        self._cache[idx] = hidden[-1, :].detach().cpu().float().numpy()
                     else:
                         # Scalar or 1-D edge case — store as-is
-                        self._cache[idx] = hidden.detach().cpu().numpy()
+                        self._cache[idx] = hidden.detach().cpu().float().numpy()
                 return hook_fn
 
             handle = self.model.model.layers[layer_idx].register_forward_hook(
