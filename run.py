@@ -89,12 +89,14 @@ def print_status(results_dir: str) -> None:
     if os.path.exists(p["exp2"]):
         with open(p["exp2"], "rb") as f:
             exp2_data = pickle.load(f)
-        print(f"Exp 2:             DONE ({len(exp2_data)} pairs)")
+        n_exp2_pairs = len({(r["feature_i"], r["feature_j"]) for r in exp2_data})
+        print(f"Exp 2:             DONE ({n_exp2_pairs} pairs, {len(exp2_data)} rows)")
     elif os.path.exists(p["exp2_ckpt"]):
         with open(p["exp2_ckpt"], "rb") as f:
             ckpt = pickle.load(f)
-        n_done = len(ckpt.get("results", []))
-        print(f"Exp 2:             IN PROGRESS ({n_done} pairs completed)")
+        rows = ckpt.get("results", [])
+        n_exp2_pairs = len({(r["feature_i"], r["feature_j"]) for r in rows})
+        print(f"Exp 2:             IN PROGRESS ({n_exp2_pairs} pairs, {len(rows)} rows)")
     else:
         print("Exp 2:             NOT STARTED")
 

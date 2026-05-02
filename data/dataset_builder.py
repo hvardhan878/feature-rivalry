@@ -625,63 +625,12 @@ _FALLBACK_UNAMBIGUOUS_QA = [
 
 
 def load_unambiguous_sample(n: int) -> list:
-    """Load n unambiguous-style questions: try Natural Questions first, else fallback to 200 factual Q&As."""
-    from datasets import load_dataset
-
-    skip_prefixes = (
-        "is ", "are ", "was ", "were ", "did ", "do ", "does ",
-        "can ", "has ", "have ",
-    )
-
-    result = []
-    try:
-        ds = load_dataset("natural_questions", "default", split="train")
-        ds = ds.shuffle(seed=42)
-        for item in ds:
-            if len(result) >= n:
-                break
-            ann = item.get("annotations")
-            if ann is None:
-                continue
-            # annotations can be dict or list (one per question)
-            if isinstance(ann, list):
-                ann = ann[0] if ann else {}
-            short_answers = ann.get("short_answers") if isinstance(ann, dict) else []
-            if not short_answers or len(short_answers) == 0:
-                continue
-            first = short_answers[0]
-            texts = first.get("text", []) if isinstance(first, dict) else []
-            if not texts:
-                continue
-            answer_text = (texts[0] if isinstance(texts[0], str) else str(texts[0])).strip()
-            word_count = len(answer_text.split())
-            if word_count < 1 or word_count > 5:
-                continue
-            q = item.get("question")
-            if q is None:
-                continue
-            if isinstance(q, list):
-                q = q[0] if q else {}
-            qtext = q.get("text", "") if isinstance(q, dict) else ""
-            if not qtext:
-                continue
-            q_lower = qtext.strip().lower()
-            if any(q_lower.startswith(p) for p in skip_prefixes):
-                continue
-            result.append({"question": qtext.strip(), "answer": answer_text})
-        if len(result) >= n:
-            print("Using Natural Questions for unambiguous set")
-            return result[:n]
-    except Exception:
-        pass
-
-    # Fallback: hardcoded factual Q&As
+    """Load n unambiguous-style questions from the built-in factual Q&A list."""
     random.seed(42)
     fallback = _FALLBACK_UNAMBIGUOUS_QA.copy()
     random.shuffle(fallback)
-    result = fallback[:n]
     print("Using fallback factual questions for unambiguous set")
-    return result
+    return fallback[:n]
 
 
 def load_pop_qa_sample(n: int) -> list:
