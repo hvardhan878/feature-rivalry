@@ -1,9 +1,10 @@
 class ActivationCache:
-    """Context manager that hooks into transformer layers and caches last-token hidden states."""
+    """Context manager that hooks into transformer layers and caches hidden states."""
 
-    def __init__(self, model, layers: list):
+    def __init__(self, model, layers: list, full_sequence: bool = False):
         self.model = model
         self.layers = layers
+        self.full_sequence = full_sequence
         self._cache: dict = {}
         self._handles: list = []
 
@@ -17,7 +18,14 @@ class ActivationCache:
                     # some transformers versions, but Gemma-2 with batch=1 may
                     # return (seq_len, hidden_dim) — handle both gracefully.
                     hidden = output[0] if isinstance(output, (tuple, list)) else output
-                    if hidden.dim() == 3:
+                    if self.full_sequence:
+                        if hidden.dim() == 3:
+                            self._cache[idx] = hidden[0].detach().cpu().float().numpy()
+                        elif hidden.dim() == 2:
+                            self._cache[idx] = hidden.detach().cpu().float().numpy()
+                        else:
+                            self._cache[idx] = hidden.detach().cpu().float().numpy()
+                    elif hidden.dim() == 3:
                         # (batch, seq_len, hidden_dim) — standard case
                         self._cache[idx] = hidden[0, -1, :].detach().cpu().float().numpy()
                     elif hidden.dim() == 2:

@@ -35,7 +35,10 @@ def plot_calibration(exp3_out: dict, results_dir: str) -> None:
     predictors of answer correctness.
     """
     results = exp3_out["results"]
-    rivalry_scores = [-r["peak_rivalry"] for r in results]
+    rivalry_scores = [
+        -r["rivalry_score"] if "rivalry_score" in r else -r["peak_rivalry"]
+        for r in results
+    ]
     softmax_scores = [r["softmax_conf"] for r in results]
     labels = [int(r["is_correct"]) for r in results]
 
