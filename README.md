@@ -18,11 +18,13 @@ cp .env.example .env
 # edit .env — set HF_TOKEN=... (read token from Hugging Face)
 chmod +x setup_paperspace.sh
 ./setup_paperspace.sh
+source .paperspace_env
+python sanity_check.py
 ```
 
 Alternatively: `export HF_TOKEN=hf_...` then run `./setup_paperspace.sh`.
 
-The script pins PyTorch to `2.5.1+cu121`, fixes NumPy, sets `LD_LIBRARY_PATH` for bundled CUDA libs, runs `huggingface-cli login`, and installs deps from `requirements.txt`. **Never commit `.env`** (it is gitignored).
+The script pins PyTorch to `2.5.1+cu121`, fixes NumPy, writes `.paperspace_env` for bundled CUDA libs, runs `huggingface-cli login`, and installs deps from `requirements.txt`. **Never commit `.env` or `.paperspace_env`** (both are gitignored).
 
 **Other environments:** install manually:
 

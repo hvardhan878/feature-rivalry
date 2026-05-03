@@ -8,6 +8,7 @@ venv/
 .venv/
 env/
 .env
+.paperspace_env
 *.egg-info/
 .eggs/
 dist/

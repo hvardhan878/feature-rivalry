@@ -46,14 +46,21 @@ pip install --force-reinstall \
 
 echo "=== CUDA library path (fix libnvJitLink / libcusparse symbol errors) ==="
 SITE="$(python -c "import site; print(site.getsitepackages()[0])")"
-export LD_LIBRARY_PATH="${SITE}/nvidia/nvjitlink/lib:${SITE}/nvidia/cusparse/lib:${SITE}/nvidia/cublas/lib:${SITE}/nvidia/cuda_runtime/lib:${SITE}/nvidia/cudnn/lib:${SITE}/nvidia/cufft/lib:${SITE}/nvidia/curand/lib:${SITE}/nvidia/cusolver/lib:${SITE}/nvidia/nccl/lib:${LD_LIBRARY_PATH:-}"
+CUDA_LIB_PATH="${SITE}/nvidia/nvjitlink/lib:${SITE}/nvidia/cusparse/lib:${SITE}/nvidia/cublas/lib:${SITE}/nvidia/cuda_runtime/lib:${SITE}/nvidia/cudnn/lib:${SITE}/nvidia/cufft/lib:${SITE}/nvidia/curand/lib:${SITE}/nvidia/cusolver/lib:${SITE}/nvidia/nccl/lib"
+export LD_LIBRARY_PATH="${CUDA_LIB_PATH}:${LD_LIBRARY_PATH:-}"
+
+cat > .paperspace_env <<EOF
+# Source this in Paperspace terminals before running Python commands:
+#   source .paperspace_env
+export LD_LIBRARY_PATH="${CUDA_LIB_PATH}:\${LD_LIBRARY_PATH:-}"
+EOF
 
 MARKER="# feature_rivalry CUDA libs (setup_paperspace.sh)"
 if ! grep -qF "$MARKER" ~/.bashrc 2>/dev/null; then
   {
     echo ""
     echo "$MARKER"
-    echo "export LD_LIBRARY_PATH=\"${SITE}/nvidia/nvjitlink/lib:${SITE}/nvidia/cusparse/lib:${SITE}/nvidia/cublas/lib:${SITE}/nvidia/cuda_runtime/lib:${SITE}/nvidia/cudnn/lib:${SITE}/nvidia/cufft/lib:${SITE}/nvidia/curand/lib:${SITE}/nvidia/cusolver/lib:${SITE}/nvidia/nccl/lib:\${LD_LIBRARY_PATH}\""
+    echo "source \"$(pwd)/.paperspace_env\""
   } >> ~/.bashrc
 fi
 
@@ -68,5 +75,8 @@ print("numpy      ", np.__version__)
 PY
 
 echo ""
-echo "Done. Open a new terminal or: source ~/.bashrc"
-echo "Then: python sanity_check.py"
+echo "Done."
+echo "IMPORTANT: because ./setup_paperspace.sh runs as a subprocess, run this in the same terminal:"
+echo "  source .paperspace_env"
+echo "Then:"
+echo "  python sanity_check.py"
