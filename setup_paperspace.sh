@@ -42,7 +42,7 @@ echo "=== NumPy / SciPy stack (torch may have upgraded numpy) ==="
 pip install --force-reinstall \
   "numpy<2" scipy scikit-learn pandas pyarrow \
   'fsspec[http]<=2025.3.0,>=2023.1.0' \
-  sentencepiece protobuf
+  sentencepiece "protobuf==4.25.3" "wandb==0.16.6"
 
 echo "=== CUDA library path (fix libnvJitLink / libcusparse symbol errors) ==="
 SITE="$(python -c "import site; print(site.getsitepackages()[0])")"
