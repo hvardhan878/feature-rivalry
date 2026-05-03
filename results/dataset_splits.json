@@ -1,0 +1,2006 @@
+{
+  "ambiguous": [
+    {
+      "question": "Who was the producer of Hot Water?",
+      "answer": "Harold Lloyd",
+      "entropy": 0.9074487141686225
+    },
+    {
+      "question": "Who was the director of Guru?",
+      "answer": "Rajiv Anchal",
+      "entropy": 0.7875424161286403
+    },
+    {
+      "question": "Who was the composer of More?",
+      "answer": "Pink Floyd",
+      "entropy": 0.9305865354845984
+    },
+    {
+      "question": "Who is the author of The Certificate?",
+      "answer": "Isaac Bashevis Singer",
+      "entropy": 0.7974309768661395
+    },
+    {
+      "question": "Who was the director of One of Those?",
+      "answer": "Aldo Fabrizi",
+      "entropy": 0.8755776668500472
+    },
+    {
+      "question": "Who was the screenwriter for Happiness?",
+      "answer": "Todd Solondz",
+      "entropy": 0.8611730716034321
+    },
+    {
+      "question": "Who was the director of Number One?",
+      "answer": "Tom Gries",
+      "entropy": 0.9074487142020033
+    },
+    {
+      "question": "In what country is Valparaiso University?",
+      "answer": "United States of America",
+      "entropy": 0.7644045948460453
+    },
+    {
+      "question": "Who was the producer of The Blue Light?",
+      "answer": "Leni Riefenstahl",
+      "entropy": 0.8755776668500472
+    },
+    {
+      "question": "Who was the producer of The Chicken?",
+      "answer": "Claude Berri",
+      "entropy": 0.8524398455674522
+    },
+    {
+      "question": "Who was the director of College?",
+      "answer": "Buster Keaton",
+      "entropy": 0.8380352503208371
+    },
+    {
+      "question": "Who is the father of Elma Yerburgh?",
+      "answer": "Daniel Thwaites",
+      "entropy": 0.9305865354845984
+    },
+    {
+      "question": "Who is the author of Fat?",
+      "answer": "Rob Grant",
+      "entropy": 0.7048796917023783
+    },
+    {
+      "question": "Who was the screenwriter for Heart?",
+      "answer": "Allison Adler",
+      "entropy": 0.8987154881326425
+    },
+    {
+      "question": "Who was the director of Green Tea?",
+      "answer": "Zhang Yuan",
+      "entropy": 0.8437066194980912
+    },
+    {
+      "question": "Who was the composer of Ariane et Barbe-bleue?",
+      "answer": "Paul Dukas",
+      "entropy": 0.9537243567671935
+    },
+    {
+      "question": "Who was the director of Andrea?",
+      "answer": "Carlos Rinaldi",
+      "entropy": 0.9305865354845984
+    },
+    {
+      "question": "In what city was Jadranka \u0160e\u0161elj born?",
+      "answer": "Podujevo",
+      "entropy": 0.7568267035115842
+    },
+    {
+      "question": "Who was the director of I Am?",
+      "answer": "Tom Shadyac",
+      "entropy": 0.9218533094152376
+    },
+    {
+      "question": "In what city was Monster born?",
+      "answer": "Hsinchu",
+      "entropy": 0.7974309768661394
+    },
+    {
+      "question": "Who was the producer of Cops and Robbers?",
+      "answer": "Carlo Ponti",
+      "entropy": 0.9218533094152376
+    },
+    {
+      "question": "Who was the screenwriter for Without Love?",
+      "answer": "Donald Ogden Stewart",
+      "entropy": 0.9305865354845984
+    },
+    {
+      "question": "Who was the producer of Bhagwan Dada?",
+      "answer": "Rakesh Roshan",
+      "entropy": 0.9999999993323837
+    },
+    {
+      "question": "Who is the author of Brand?",
+      "answer": "Henrik Ibsen",
+      "entropy": 0.7105510608796324
+    },
+    {
+      "question": "Who was the screenwriter for Walking?",
+      "answer": "Ryan Larkin",
+      "entropy": 0.9305865354845984
+    },
+    {
+      "question": "Who was the screenwriter for The River?",
+      "answer": "Pare Lorentz",
+      "entropy": 0.8437066194980912
+    },
+    {
+      "question": "Who was the screenwriter for These Children?",
+      "answer": "Mario Mattoli",
+      "entropy": 0.9768621780497886
+    },
+    {
+      "question": "Who was the director of All or Nothing?",
+      "answer": "Mike Leigh",
+      "entropy": 0.8987154881326425
+    },
+    {
+      "question": "Who is the father of Bridget Bendish?",
+      "answer": "Henry Ireton",
+      "entropy": 0.8843108928860274
+    },
+    {
+      "question": "Who was the producer of The Mission?",
+      "answer": "Johnnie To",
+      "entropy": 0.7917596077222662
+    },
+    {
+      "question": "What is Jay the capital of?",
+      "answer": "Delaware County",
+      "entropy": 0.8524398455674521
+    },
+    {
+      "question": "Who was the director of How High?",
+      "answer": "Jesse Dylan",
+      "entropy": 0.7181289522808552
+    },
+    {
+      "question": "Who was the composer of Happy?",
+      "answer": "Yuvan Shankar Raja",
+      "entropy": 0.7962756421980012
+    },
+    {
+      "question": "Who was the director of Blow?",
+      "answer": "Ted Demme",
+      "entropy": 0.7280175129849734
+    },
+    {
+      "question": "Who was the producer of Secretary?",
+      "answer": "Steven Shainberg",
+      "entropy": 0.9537243567671935
+    },
+    {
+      "question": "Who was the director of Invasion from Inner Earth?",
+      "answer": "Bill Rebane",
+      "entropy": 0.8987154881326425
+    },
+    {
+      "question": "Who was the director of Erotica?",
+      "answer": "Fabien Baron",
+      "entropy": 0.884310892919408
+    },
+    {
+      "question": "Who was the screenwriter for The Curse?",
+      "answer": "David Keith",
+      "entropy": 0.9537243567671935
+    },
+    {
+      "question": "Who was the screenwriter for My Love?",
+      "answer": "Ivan Shmelyov",
+      "entropy": 0.9768621780497886
+    },
+    {
+      "question": "Who was the composer of Celebration?",
+      "answer": "Harvey Schmidt",
+      "entropy": 0.9305865354845984
+    },
+    {
+      "question": "Who was the producer of Pixels?",
+      "answer": "Chris Columbus",
+      "entropy": 0.8668444407806863
+    },
+    {
+      "question": "Who was the director of Submission?",
+      "answer": "Stefan Jarl",
+      "entropy": 0.8987154881326425
+    },
+    {
+      "question": "Who was the director of Cure?",
+      "answer": "Kiyoshi Kurosawa",
+      "entropy": 0.9074487142020033
+    },
+    {
+      "question": "Who was the producer of The Lady?",
+      "answer": "Luc Besson",
+      "entropy": 0.8987154881326425
+    },
+    {
+      "question": "Who was the producer of Exposure?",
+      "answer": "Robert Fripp",
+      "entropy": 0.8061642029688812
+    },
+    {
+      "question": "Who was the composer of Most?",
+      "answer": "John Debney",
+      "entropy": 0.8987154881326425
+    },
+    {
+      "question": "Who was the screenwriter for The Verdict?",
+      "answer": "David Mamet",
+      "entropy": 0.8194134634805963
+    },
+    {
+      "question": "Who was the producer of From Beyond?",
+      "answer": "Brian Yuzna",
+      "entropy": 0.7032402677350531
+    },
+    {
+      "question": "Who was the screenwriter for Storm over Mont Blanc?",
+      "answer": "Arnold Fanck",
+      "entropy": 0.8611730716034323
+    },
+    {
+      "question": "What genre is Suicide?",
+      "answer": "essay",
+      "entropy": 0.7799645247941793
+    },
+    {
+      "question": "In what country is Sabiote?",
+      "answer": "Spain",
+      "entropy": 0.7268621783168351
+    },
+    {
+      "question": "What is Pavlovsky Posad the capital of?",
+      "answer": "Pavlovo-Posadsky District",
+      "entropy": 0.7974309769329012
+    },
+    {
+      "question": "Who was the director of Mypods and Boomsticks?",
+      "answer": "Steven Dean Moore",
+      "entropy": 0.8987154881326425
+    },
+    {
+      "question": "What genre is Tales of Maj'Eyal?",
+      "answer": "roguelike",
+      "entropy": 0.8380352503208371
+    },
+    {
+      "question": "Who was the director of The International?",
+      "answer": "Tom Tykwer",
+      "entropy": 0.9305865354845984
+    },
+    {
+      "question": "Who was the director of Colorful?",
+      "answer": "Keiichi Hara",
+      "entropy": 0.9537243567671935
+    },
+    {
+      "question": "Who was the screenwriter for Career?",
+      "answer": "Dalton Trumbo",
+      "entropy": 0.9537243567671935
+    },
+    {
+      "question": "What genre is Don Bosco?",
+      "answer": "biographical film",
+      "entropy": 0.7223461437743384
+    },
+    {
+      "question": "What genre is A Monster in Paris?",
+      "answer": "fantasy film",
+      "entropy": 0.7962756421980012
+    },
+    {
+      "question": "Who was the screenwriter for The Pilot?",
+      "answer": "Marta Kauffman",
+      "entropy": 0.8194134634805963
+    },
+    {
+      "question": "Who was the screenwriter for Unexpected?",
+      "answer": "Brannon Braga",
+      "entropy": 0.9768621780497886
+    },
+    {
+      "question": "Who was the director of The Emerald City?",
+      "answer": "Simon Cellan Jones",
+      "entropy": 0.9218533094152376
+    },
+    {
+      "question": "Who was the producer of Paid?",
+      "answer": "Sam Wood",
+      "entropy": 0.9074487141686225
+    },
+    {
+      "question": "Who is the author of Heaven?",
+      "answer": "Jack Cohen",
+      "entropy": 0.8755776668500472
+    },
+    {
+      "question": "Who was the producer of Happy?",
+      "answer": "Frederic Zelnik",
+      "entropy": 0.9305865354845984
+    },
+    {
+      "question": "Who was the producer of The Conversation?",
+      "answer": "Francis Ford Coppola",
+      "entropy": 0.7556713687766844
+    },
+    {
+      "question": "Who is the author of Umbrella?",
+      "answer": "Will Self",
+      "entropy": 0.9218533094152376
+    },
+    {
+      "question": "What sport does Leonardo Torres play?",
+      "answer": "association football",
+      "entropy": 0.884310892919408
+    },
+    {
+      "question": "Who was the producer of Hospital Music?",
+      "answer": "Matthew Good",
+      "entropy": 0.8380352503208371
+    },
+    {
+      "question": "Who is the author of M\u00c4R?",
+      "answer": "Nobuyuki Anzai",
+      "entropy": 0.9768621780497886
+    },
+    {
+      "question": "Who was the screenwriter for Thursday?",
+      "answer": "Skip Woods",
+      "entropy": 0.8755776668500472
+    },
+    {
+      "question": "Who was the director of The Final Test?",
+      "answer": "Anthony Asquith",
+      "entropy": 0.9999999993323837
+    },
+    {
+      "question": "Who was the producer of Every Night?",
+      "answer": "Paul McCartney",
+      "entropy": 0.9537243567671935
+    },
+    {
+      "question": "Who was the composer of One Last Time?",
+      "answer": "Savan Kotecha",
+      "entropy": 0.797430976932901
+    },
+    {
+      "question": "What is Idi Rayeuk the capital of?",
+      "answer": "Aceh Timur",
+      "entropy": 0.7424221082315884
+    },
+    {
+      "question": "Who was the screenwriter for Murderers?",
+      "answer": "Patrick Grandperret",
+      "entropy": 0.9305865354845984
+    },
+    {
+      "question": "Who was the screenwriter for The Bench?",
+      "answer": "Per Fly",
+      "entropy": 0.9537243567671935
+    },
+    {
+      "question": "Who was the composer of Christmas Eve?",
+      "answer": "Nikolai Rimsky-Korsakov",
+      "entropy": 0.7511553343009494
+    },
+    {
+      "question": "Who was the screenwriter for The East?",
+      "answer": "Zal Batmanglij",
+      "entropy": 0.9537243567671935
+    },
+    {
+      "question": "Who was the producer of Click?",
+      "answer": "Adam Sandler",
+      "entropy": 0.8611730716034321
+    },
+    {
+      "question": "What is the capital of Artern?",
+      "answer": "Artern",
+      "entropy": 0.7830263816862861
+    },
+    {
+      "question": "Who was the screenwriter for Hard to Get?",
+      "answer": "Jerry Wald",
+      "entropy": 0.8987154881326425
+    },
+    {
+      "question": "Who was the director of New Frontier?",
+      "answer": "George Sherman",
+      "entropy": 0.7598885603703102
+    },
+    {
+      "question": "Who was the director of Palo Alto?",
+      "answer": "Gia Coppola",
+      "entropy": 0.8987154881326425
+    },
+    {
+      "question": "Who was the screenwriter for Weekend?",
+      "answer": "Jean-Luc Godard",
+      "entropy": 0.9768621780497886
+    },
+    {
+      "question": "What genre is Sabotage?",
+      "answer": "action film",
+      "entropy": 0.7655599295141834
+    },
+    {
+      "question": "Who was the composer of Chicago?",
+      "answer": "Graham Nash",
+      "entropy": 0.7192842869489933
+    },
+    {
+      "question": "Who is the author of The Best of Friends?",
+      "answer": "Hugh Whitemore",
+      "entropy": 0.7644045948460453
+    },
+    {
+      "question": "What genre is Se Amar Mon Kereche?",
+      "answer": "action film",
+      "entropy": 0.9074487142020033
+    },
+    {
+      "question": "In what city was Fernando Garc\u00eda born?",
+      "answer": "Santiago",
+      "entropy": 0.9768621780497886
+    },
+    {
+      "question": "Who is the author of Sisters?",
+      "answer": "Lynne Cheney",
+      "entropy": 0.9537243567671935
+    },
+    {
+      "question": "What genre is The Dying Night?",
+      "answer": "science fiction",
+      "entropy": 0.7731378209154061
+    },
+    {
+      "question": "What sport does Jean play?",
+      "answer": "association football",
+      "entropy": 0.7032402677350531
+    },
+    {
+      "question": "Who was the director of The Take?",
+      "answer": "Brad Furman",
+      "entropy": 0.9218533094152376
+    },
+    {
+      "question": "What genre is As One?",
+      "answer": "Cantopop",
+      "entropy": 0.7032402677350531
+    },
+    {
+      "question": "Who was the producer of Parker?",
+      "answer": "Taylor Hackford",
+      "entropy": 0.9537243567671935
+    },
+    {
+      "question": "Who was the producer of Airport?",
+      "answer": "Anubhav Sinha",
+      "entropy": 0.9074487142020033
+    },
+    {
+      "question": "Who is the author of Millennial Rites?",
+      "answer": "Craig Hinton",
+      "entropy": 0.9537243567671935
+    },
+    {
+      "question": "Who was the director of Angel?",
+      "answer": "Ganesh Acharya",
+      "entropy": 0.8293020242514761
+    },
+    {
+      "question": "Who is the author of Blood Test?",
+      "answer": "Jonathan Kellerman",
+      "entropy": 0.9305865354845984
+    },
+    {
+      "question": "What genre is Society?",
+      "answer": "horror film",
+      "entropy": 0.8668444407806863
+    },
+    {
+      "question": "Who is the father of Giacomo Guardi?",
+      "answer": "Francesco Guardi",
+      "entropy": 0.7974309768661394
+    },
+    {
+      "question": "Who was the screenwriter for Me Without You?",
+      "answer": "Sandra Goldbacher",
+      "entropy": 0.8987154881326425
+    },
+    {
+      "question": "In what country is Mon?",
+      "answer": "Thailand",
+      "entropy": 0.8755776668500472
+    },
+    {
+      "question": "Who was the director of Hoot?",
+      "answer": "Wil Shriner",
+      "entropy": 0.7655599295141834
+    },
+    {
+      "question": "In what country is Mineral?",
+      "answer": "United States of America",
+      "entropy": 0.8755776668500473
+    },
+    {
+      "question": "Who was the screenwriter for The Debt?",
+      "answer": "Krzysztof Krauze",
+      "entropy": 0.7742931556169251
+    },
+    {
+      "question": "Who was the producer of The Dilemma?",
+      "answer": "Vince Vaughn",
+      "entropy": 0.9305865354845984
+    },
+    {
+      "question": "Who is the author of Gin Tama?",
+      "answer": "Hideaki Sorachi",
+      "entropy": 0.9537243567671935
+    },
+    {
+      "question": "Who was the director of The Cell?",
+      "answer": "Tarsem Singh",
+      "entropy": 0.8524398455674522
+    },
+    {
+      "question": "Who was the producer of This Island Earth?",
+      "answer": "William Alland",
+      "entropy": 0.9537243567671935
+    },
+    {
+      "question": "Who is the author of The Friendship?",
+      "answer": "Mildred D. Taylor",
+      "entropy": 0.8899822620632816
+    },
+    {
+      "question": "Who was the screenwriter for Blackboards?",
+      "answer": "Mohsen Makhmalbaf",
+      "entropy": 0.7917596077222662
+    },
+    {
+      "question": "Who was the composer of Five Years?",
+      "answer": "David Bowie",
+      "entropy": 0.9537243567671935
+    },
+    {
+      "question": "Who was the director of No Such Thing?",
+      "answer": "Hal Hartley",
+      "entropy": 0.9537243567671935
+    },
+    {
+      "question": "Who was the screenwriter for The Best Man?",
+      "answer": "Gore Vidal",
+      "entropy": 0.9218533094152376
+    },
+    {
+      "question": "Who was the director of The Crew?",
+      "answer": "Michael Dinner",
+      "entropy": 0.9768621780497886
+    },
+    {
+      "question": "In what city was Estevan Pel\u00e9\u00e8 born?",
+      "answer": "Brou-sur-Chantereine",
+      "entropy": 0.8843108928860274
+    },
+    {
+      "question": "Who is the author of Stack Overflow?",
+      "answer": "Joel Spolsky",
+      "entropy": 0.7655599295141834
+    },
+    {
+      "question": "Who was the director of Postal?",
+      "answer": "Uwe Boll",
+      "entropy": 0.9768621780497886
+    },
+    {
+      "question": "Who was the director of Brotherhood of the Wolf?",
+      "answer": "Christophe Gans",
+      "entropy": 0.9218533094152376
+    },
+    {
+      "question": "Who was the director of Face to Face?",
+      "answer": "Michael Rymer",
+      "entropy": 0.9768621780497886
+    },
+    {
+      "question": "Who was the screenwriter for Clockwise?",
+      "answer": "Michael Frayn",
+      "entropy": 0.9305865354845984
+    },
+    {
+      "question": "Who was the director of Sacrifice?",
+      "answer": "Adam Davidson",
+      "entropy": 0.8843108928860274
+    },
+    {
+      "question": "Who was the director of The Mountain?",
+      "answer": "Markus Imhoof",
+      "entropy": 0.9768621780497886
+    },
+    {
+      "question": "Who was the director of The Greatest?",
+      "answer": "Monte Hellman",
+      "entropy": 0.8843108928860274
+    },
+    {
+      "question": "Who was the screenwriter for La spiaggia?",
+      "answer": "Alberto Lattuada",
+      "entropy": 0.8987154881326425
+    },
+    {
+      "question": "Who was the screenwriter for Grace?",
+      "answer": "Melinda Hsu Taylor",
+      "entropy": 0.8293020242514761
+    },
+    {
+      "question": "In what city was Indians born?",
+      "answer": "Denmark",
+      "entropy": 0.8437066194980912
+    },
+    {
+      "question": "Who was the director of Michael?",
+      "answer": "Carl Theodor Dreyer",
+      "entropy": 0.838035250320837
+    },
+    {
+      "question": "Who is the author of Gor?",
+      "answer": "John Norman",
+      "entropy": 0.8380352503208371
+    },
+    {
+      "question": "Who was the composer of The Moment's Energy?",
+      "answer": "Evan Parker",
+      "entropy": 0.8987154881326425
+    },
+    {
+      "question": "Who is the father of Rahy?",
+      "answer": "Blushing Groom",
+      "entropy": 0.9218533094152376
+    },
+    {
+      "question": "Who was the director of The Only Woman?",
+      "answer": "Sidney Olcott",
+      "entropy": 0.9305865354845984
+    },
+    {
+      "question": "Who is the mother of Alexander I of Yugoslavia?",
+      "answer": "Princess Zorka of Montenegro",
+      "entropy": 0.9768621780497886
+    },
+    {
+      "question": "Who was the screenwriter for The Big One?",
+      "answer": "Chip Johannessen",
+      "entropy": 0.8843108928860274
+    },
+    {
+      "question": "Who is the author of The Sacrifice?",
+      "answer": "Charlie Higson",
+      "entropy": 0.8987154881326425
+    },
+    {
+      "question": "Who was the screenwriter for Guilty?",
+      "answer": "Howard Gordon",
+      "entropy": 0.806164202968881
+    },
+    {
+      "question": "Who was the composer of Ninnindale?",
+      "answer": "Mani Sharma",
+      "entropy": 0.7830263816862861
+    },
+    {
+      "question": "Who is the author of Chosen?",
+      "answer": "Kristin Cast",
+      "entropy": 0.9305865354845984
+    },
+    {
+      "question": "Who was the screenwriter for The Chase?",
+      "answer": "Philip Yordan",
+      "entropy": 0.9768621780497886
+    },
+    {
+      "question": "Who was the screenwriter for Episodes?",
+      "answer": "David Crane",
+      "entropy": 0.9074487142020033
+    },
+    {
+      "question": "Who was the producer of X?",
+      "answer": "Roger Corman",
+      "entropy": 0.8293020242514764
+    },
+    {
+      "question": "Who is the author of Room Service?",
+      "answer": "Allen Boretz",
+      "entropy": 0.9768621780497886
+    },
+    {
+      "question": "Who was the producer of The Treatment?",
+      "answer": "Oren Rudavsky",
+      "entropy": 0.9074487142020033
+    },
+    {
+      "question": "Who was the composer of Calling You?",
+      "answer": "Bob Telson",
+      "entropy": 0.8987154881326425
+    },
+    {
+      "question": "Who was the director of About Love?",
+      "answer": "Zhang Yibai",
+      "entropy": 0.8843108928860274
+    },
+    {
+      "question": "Who was the producer of For Better or Worse?",
+      "answer": "Jeff Nathanson",
+      "entropy": 0.9537243567671935
+    },
+    {
+      "question": "In what city was Hailey McCann born?",
+      "answer": "Riverside",
+      "entropy": 0.9218533094152376
+    },
+    {
+      "question": "Who was the director of The Secret?",
+      "answer": "Robert Enrico",
+      "entropy": 0.7499999995994302
+    },
+    {
+      "question": "Who was the director of The Saint?",
+      "answer": "Abdur Rashid Kardar",
+      "entropy": 0.7731378209154061
+    },
+    {
+      "question": "Who is the author of Plum Spooky?",
+      "answer": "Janet Evanovich",
+      "entropy": 0.7655599295141834
+    },
+    {
+      "question": "In what country is New Home?",
+      "answer": "United States of America",
+      "entropy": 0.7974309769329012
+    },
+    {
+      "question": "Who was the producer of The Possession?",
+      "answer": "Sam Raimi",
+      "entropy": 0.9305865354845984
+    },
+    {
+      "question": "What sport does Guilherme Andrade play?",
+      "answer": "association football",
+      "entropy": 0.7192842869489934
+    },
+    {
+      "question": "What is the capital of Olyokminsky District?",
+      "answer": "Olyokminsk",
+      "entropy": 0.7974309768661395
+    },
+    {
+      "question": "Who is the author of Justice?",
+      "answer": "John Galsworthy",
+      "entropy": 0.9305865354845984
+    },
+    {
+      "question": "What genre is Monk?",
+      "answer": "comedy-drama",
+      "entropy": 0.9305865354845984
+    },
+    {
+      "question": "Who was the producer of Son of Cheep Thrills?",
+      "answer": "Frank Zappa",
+      "entropy": 0.8293020242514761
+    },
+    {
+      "question": "Who was the director of The Night Riders?",
+      "answer": "Alexander Butler",
+      "entropy": 0.8293020242514764
+    },
+    {
+      "question": "Who is the author of Hard Time?",
+      "answer": "Mary Skrenes",
+      "entropy": 0.9305865354845984
+    },
+    {
+      "question": "Who was the producer of (I Can't Get No) Satisfaction?",
+      "answer": "Andrew Loog Oldham",
+      "entropy": 0.7499999995994302
+    },
+    {
+      "question": "In what city was Gregorio Selser born?",
+      "answer": "Buenos Aires",
+      "entropy": 0.9537243567671935
+    },
+    {
+      "question": "Who was the screenwriter for Dead Cert?",
+      "answer": "Tony Richardson",
+      "entropy": 0.9537243567671935
+    },
+    {
+      "question": "In what country is Orefield?",
+      "answer": "United States of America",
+      "entropy": 0.7511553343343301
+    },
+    {
+      "question": "Who was the screenwriter for 201?",
+      "answer": "Trey Parker",
+      "entropy": 0.9305865354845984
+    },
+    {
+      "question": "Who is the author of BLIT?",
+      "answer": "David Langford",
+      "entropy": 0.9305865354845984
+    },
+    {
+      "question": "What genre is Always Will Be?",
+      "answer": "heavy metal",
+      "entropy": 0.7598885603703102
+    },
+    {
+      "question": "Who is the author of Calling You?",
+      "answer": "Otsuichi",
+      "entropy": 0.9218533094152376
+    },
+    {
+      "question": "Who was the producer of Passion?",
+      "answer": "Peter Gabriel",
+      "entropy": 0.8524398455674522
+    },
+    {
+      "question": "Who is the father of Whalebone?",
+      "answer": "Waxy",
+      "entropy": 0.7313782127591895
+    },
+    {
+      "question": "Who was the screenwriter for To Die For?",
+      "answer": "Johnny Byrne",
+      "entropy": 0.7644045948460453
+    },
+    {
+      "question": "What genre is Morning?",
+      "answer": "seinen",
+      "entropy": 0.7454839651570759
+    },
+    {
+      "question": "Who was the director of A Woman?",
+      "answer": "Charlie Chaplin",
+      "entropy": 0.9305865354845984
+    },
+    {
+      "question": "Who is the author of Passage?",
+      "answer": "Connie Willis",
+      "entropy": 0.9537243567671935
+    },
+    {
+      "question": "Who was the producer of The Passenger?",
+      "answer": "Carlo Ponti",
+      "entropy": 0.9449911306978327
+    },
+    {
+      "question": "Who is the author of Love's Welcome at Bolsover?",
+      "answer": "Ben Jonson",
+      "entropy": 0.9449911306978327
+    },
+    {
+      "question": "Who was the director of Guess Who?",
+      "answer": "Kevin Rodney Sullivan",
+      "entropy": 0.8987154881326425
+    },
+    {
+      "question": "Who was the director of Scooby-Doo?",
+      "answer": "Raja Gosnell",
+      "entropy": 0.70372435703424
+    },
+    {
+      "question": "Who was the director of The Fool?",
+      "answer": "Christine Edzard",
+      "entropy": 0.9537243567671935
+    },
+    {
+      "question": "Who was the director of Night Train to Lisbon?",
+      "answer": "Bille August",
+      "entropy": 0.768621786439671
+    },
+    {
+      "question": "In what city was Lance Hooper born?",
+      "answer": "Palmdale",
+      "entropy": 0.8293020242848571
+    },
+    {
+      "question": "Who was the screenwriter for All or Nothing?",
+      "answer": "Mike Leigh",
+      "entropy": 0.8899822620632816
+    },
+    {
+      "question": "Who was the producer of So?",
+      "answer": "Daniel Lanois",
+      "entropy": 0.9218533094152376
+    },
+    {
+      "question": "Who was the screenwriter for The Slave?",
+      "answer": "Sergio Corbucci",
+      "entropy": 0.9218533094152376
+    },
+    {
+      "question": "Who was the director of Cuadril\u00e1tero?",
+      "answer": "Eloy de la Iglesia",
+      "entropy": 0.9999999993323837
+    },
+    {
+      "question": "Who was the composer of The Fog of War?",
+      "answer": "Philip Glass",
+      "entropy": 0.9449911306978327
+    },
+    {
+      "question": "Who was the director of Turning the Tables?",
+      "answer": "Elmer Clifton",
+      "entropy": 0.8843108928860274
+    },
+    {
+      "question": "Who is the author of Across Many Mountains?",
+      "answer": "Yangzom Brauen",
+      "entropy": 0.9537243567671935
+    },
+    {
+      "question": "Who is the author of Memory?",
+      "answer": "Stephen King",
+      "entropy": 0.9537243567671935
+    },
+    {
+      "question": "Who was the director of Home?",
+      "answer": "Chookiat Sakveerakul",
+      "entropy": 0.9537243567671935
+    },
+    {
+      "question": "Who was the screenwriter for The Second Coming?",
+      "answer": "Tim Kring",
+      "entropy": 0.9449911306978327
+    },
+    {
+      "question": "Who was the composer of The Civil War?",
+      "answer": "Frank Wildhorn",
+      "entropy": 0.7742931555835445
+    },
+    {
+      "question": "In what country is Ig?",
+      "answer": "Slovenia",
+      "entropy": 0.8987154881326425
+    },
+    {
+      "question": "In what city was Dick Arndt born?",
+      "answer": "Bonners Ferry",
+      "entropy": 0.9449911306978327
+    },
+    {
+      "question": "In what city was Joel Johnson born?",
+      "answer": "Elmore",
+      "entropy": 0.8611730716034323
+    },
+    {
+      "question": "What is the religion of Joseph Schubert?",
+      "answer": "Catholic Church",
+      "entropy": 0.7556713687766844
+    },
+    {
+      "question": "Who is the author of The Far Shore of Time?",
+      "answer": "Frederik Pohl",
+      "entropy": 0.8380352503208371
+    },
+    {
+      "question": "Who was the composer of La Notte?",
+      "answer": "Giorgio Gaslini",
+      "entropy": 0.8194134634805963
+    },
+    {
+      "question": "Who was the screenwriter for Mantra?",
+      "answer": "Ravi Prakash",
+      "entropy": 0.9449911306978327
+    }
+  ],
+  "unambiguous": [
+    {
+      "question": "In what country is S\u00e3o Pedro do Sul?",
+      "answer": "Brazil",
+      "entropy": 0.06626601612512048
+    },
+    {
+      "question": "What genre is New Watch?",
+      "answer": "fantasy",
+      "entropy": 0.4203314440225806
+    },
+    {
+      "question": "Who was the director of L\u00e9on: The Professional?",
+      "answer": "Luc Besson",
+      "entropy": 0.0
+    },
+    {
+      "question": "What is the religion of University of Portland?",
+      "answer": "Catholic Church",
+      "entropy": 0.3803283899247735
+    },
+    {
+      "question": "In what country is K\u014dchi Prefecture?",
+      "answer": "Japan",
+      "entropy": 0.06626601612512048
+    },
+    {
+      "question": "Who is the mother of Princess Maria Antonia of Naples and Sicily?",
+      "answer": "Maria Carolina of Austria",
+      "entropy": 0.4992488123106467
+    },
+    {
+      "question": "In what country is Central Philippine University?",
+      "answer": "Philippines",
+      "entropy": 0.32778015885881945
+    },
+    {
+      "question": "What is Mike Flanagan's occupation?",
+      "answer": "screenwriter",
+      "entropy": 0.06626601612512048
+    },
+    {
+      "question": "Who was the director of Legend?",
+      "answer": "Ridley Scott",
+      "entropy": 0.471862054742198
+    },
+    {
+      "question": "What sport does Jason Kidd play?",
+      "answer": "basketball",
+      "entropy": 0.10851536235772687
+    },
+    {
+      "question": "What is the capital of North Korea?",
+      "answer": "Pyongyang",
+      "entropy": 0.0
+    },
+    {
+      "question": "What sport does Canada women's national field hockey team play?",
+      "answer": "field hockey",
+      "entropy": 0.06626601612512048
+    },
+    {
+      "question": "In what country is Ormak, Isfahan?",
+      "answer": "Iran",
+      "entropy": 0.3091583720185786
+    },
+    {
+      "question": "What is the capital of Egypt Eyalet?",
+      "answer": "Cairo",
+      "entropy": 0.49924881231064666
+    },
+    {
+      "question": "What is the religion of bhikkhu?",
+      "answer": "Buddhism",
+      "entropy": 0.4023108765392304
+    },
+    {
+      "question": "Who is the author of Potter?",
+      "answer": "Roy Clarke",
+      "entropy": 0.2045808490873155
+    },
+    {
+      "question": "Who is the author of Free to Choose?",
+      "answer": "Milton Friedman",
+      "entropy": 0.29888515475019534
+    },
+    {
+      "question": "What is \u015eefik Birkiye's occupation?",
+      "answer": "architect",
+      "entropy": 0.3602048933722473
+    },
+    {
+      "question": "What is Michael Shelley's occupation?",
+      "answer": "singer-songwriter",
+      "entropy": 0.4999999997663343
+    },
+    {
+      "question": "What sport does Layla Young play?",
+      "answer": "association football",
+      "entropy": 0.32833384602029136
+    },
+    {
+      "question": "What is Owando the capital of?",
+      "answer": "Cuvette Department",
+      "entropy": 0.13165318364032197
+    },
+    {
+      "question": "Who is the author of Legend?",
+      "answer": "Marie Lu",
+      "entropy": 0.13165318364032197
+    },
+    {
+      "question": "In what country is Edmundston?",
+      "answer": "Canada",
+      "entropy": 0.14110375995132216
+    },
+    {
+      "question": "What sport does 1994 Swedish Open play?",
+      "answer": "tennis",
+      "entropy": 0.1729748073032781
+    },
+    {
+      "question": "What is Nan the capital of?",
+      "answer": "Nan",
+      "entropy": 0.32202297603279034
+    },
+    {
+      "question": "Who is the author of The Little Prince?",
+      "answer": "Antoine de Saint-Exup\u00e9ry",
+      "entropy": 0.06626601612512048
+    },
+    {
+      "question": "In what country is Z\u00e1blat\u00ed?",
+      "answer": "Czech Republic",
+      "entropy": 0.4194626983594137
+    },
+    {
+      "question": "What genre is Bis?",
+      "answer": "indie pop",
+      "entropy": 0.13165318364032197
+    },
+    {
+      "question": "What is Mbabane the capital of?",
+      "answer": "Eswatini",
+      "entropy": 0.0
+    },
+    {
+      "question": "What is the religion of Appalachian Bible College?",
+      "answer": "Baptists",
+      "entropy": 0.439991007390242
+    },
+    {
+      "question": "Who was the director of On the Beach?",
+      "answer": "Russell Mulcahy",
+      "entropy": 0.24903182136824528
+    },
+    {
+      "question": "What genre is Fuel?",
+      "answer": "heavy metal",
+      "entropy": 0.4813782129260934
+    },
+    {
+      "question": "What is the capital of Bourbon Restoration?",
+      "answer": "Paris",
+      "entropy": 0.4999999997663343
+    },
+    {
+      "question": "What is the capital of Medzilaborce District?",
+      "answer": "Medzilaborce",
+      "entropy": 0.3691551105509137
+    },
+    {
+      "question": "What genre is Zeni Geva?",
+      "answer": "progressive rock",
+      "entropy": 0.4203314440225806
+    },
+    {
+      "question": "What is the capital of Morocco?",
+      "answer": "Rabat",
+      "entropy": 0.24903182136824534
+    },
+    {
+      "question": "What is Deggendorf the capital of?",
+      "answer": "Deggendorf",
+      "entropy": 0.4560350265374207
+    },
+    {
+      "question": "Who is the author of The Birds?",
+      "answer": "Daphne du Maurier",
+      "entropy": 0.3370670720896523
+    },
+    {
+      "question": "What is the capital of \u015awi\u0119tokrzyskie Voivodeship?",
+      "answer": "Kielce",
+      "entropy": 0.06626601612512048
+    },
+    {
+      "question": "What genre is Adore?",
+      "answer": "alternative rock",
+      "entropy": 0.4203314440225807
+    },
+    {
+      "question": "What is Dharamshala the capital of?",
+      "answer": "Kangra district",
+      "entropy": 0.1729748073032781
+    },
+    {
+      "question": "What genre is Fantasy?",
+      "answer": "rock music",
+      "entropy": 0.19611262858587322
+    },
+    {
+      "question": "What is the capital of Victoria?",
+      "answer": "Melbourne",
+      "entropy": 0.30519602473769636
+    },
+    {
+      "question": "In what country is 77th United States Congress?",
+      "answer": "United States of America",
+      "entropy": 0.2733249773857403
+    },
+    {
+      "question": "What genre is Frifot?",
+      "answer": "traditional music",
+      "entropy": 0.38334271465484243
+    },
+    {
+      "question": "What is Delhi the capital of?",
+      "answer": "Lodhi dynasty",
+      "entropy": 0.10851536235772687
+    },
+    {
+      "question": "Who was the director of Hook?",
+      "answer": "Steven Spielberg",
+      "entropy": 0.19611262858587322
+    },
+    {
+      "question": "What is the capital of Nebraska?",
+      "answer": "Lincoln",
+      "entropy": 0.0
+    },
+    {
+      "question": "Who was the director of Menu?",
+      "answer": "Nick Grinde",
+      "entropy": 0.2988851547501953
+    },
+    {
+      "question": "What genre is Kiss?",
+      "answer": "pop music",
+      "entropy": 0.4813782129260934
+    },
+    {
+      "question": "Who is the father of Apollo?",
+      "answer": "Zeus",
+      "entropy": 0.0
+    },
+    {
+      "question": "In what country is P\u00e2r\u00e2ul Bogat?",
+      "answer": "Romania",
+      "entropy": 0.26701410739823933
+    },
+    {
+      "question": "In what country is Australian Labor Party?",
+      "answer": "Australia",
+      "entropy": 0.06626601612512048
+    },
+    {
+      "question": "In what country is Lutsk?",
+      "answer": "Ukraine",
+      "entropy": 0.13165318364032197
+    },
+    {
+      "question": "What genre is Starship Troopers: Terran Ascendancy?",
+      "answer": "real-time tactics",
+      "entropy": 0.32833384602029136
+    },
+    {
+      "question": "Who was the director of Elizabeth?",
+      "answer": "Shekhar Kapur",
+      "entropy": 0.38846039667062465
+    },
+    {
+      "question": "What is Osu the capital of?",
+      "answer": "Danish Gold Coast",
+      "entropy": 0.4681289524143783
+    },
+    {
+      "question": "What is Eleanor Davis's occupation?",
+      "answer": "cartoonist",
+      "entropy": 0.4194626983594137
+    },
+    {
+      "question": "Who was the screenwriter for Chicago?",
+      "answer": "Nick Santora",
+      "entropy": 0.49499987602479306
+    },
+    {
+      "question": "What is the capital of Nunavut?",
+      "answer": "Iqaluit",
+      "entropy": 0.3091583720185786
+    },
+    {
+      "question": "What is Lisa McRee's occupation?",
+      "answer": "journalist",
+      "entropy": 0.25958971772186656
+    },
+    {
+      "question": "What is the religion of Valparaiso University?",
+      "answer": "Lutheranism",
+      "entropy": 0.23645189643927145
+    },
+    {
+      "question": "Who was the director of Black Book?",
+      "answer": "Paul Verhoeven",
+      "entropy": 0.3509179801414145
+    },
+    {
+      "question": "What sport does 1973 Virginia Slims of Fort Lauderdale play?",
+      "answer": "tennis",
+      "entropy": 0.06626601612512048
+    },
+    {
+      "question": "What genre is Ministry?",
+      "answer": "industrial metal",
+      "entropy": 0.24387628611564421
+    },
+    {
+      "question": "What genre is S Club 7?",
+      "answer": "pop music",
+      "entropy": 0.06626601612512048
+    },
+    {
+      "question": "Who is the author of About Time?",
+      "answer": "Paul Davies",
+      "entropy": 0.2907914294910812
+    },
+    {
+      "question": "Who is the father of Louis X of France?",
+      "answer": "Philip IV of France",
+      "entropy": 0.42544869782182543
+    },
+    {
+      "question": "Who was the screenwriter for The Gift?",
+      "answer": "Billy Bob Thornton",
+      "entropy": 0.13165318364032197
+    },
+    {
+      "question": "Who was the director of Manhattan Murder Mystery?",
+      "answer": "Woody Allen",
+      "entropy": 0.19611262858587322
+    },
+    {
+      "question": "In what country is Washington?",
+      "answer": "United States of America",
+      "entropy": 0.3888269277623322
+    },
+    {
+      "question": "What is the capital of Maryland?",
+      "answer": "Annapolis",
+      "entropy": 0.0
+    },
+    {
+      "question": "What is the capital of State of Vietnam?",
+      "answer": "Ho Chi Minh City",
+      "entropy": 0.06626601612512048
+    },
+    {
+      "question": "What is the religion of George Washington?",
+      "answer": "Episcopal Church",
+      "entropy": 0.4203314440225806
+    },
+    {
+      "question": "Who was the screenwriter for WALL\u00b7E?",
+      "answer": "Andrew Stanton",
+      "entropy": 0.4816129011912764
+    },
+    {
+      "question": "Who was the composer of On the Town?",
+      "answer": "Leonard Bernstein",
+      "entropy": 0.06626601612512048
+    },
+    {
+      "question": "What genre is Cows?",
+      "answer": "punk rock",
+      "entropy": 0.4203314440225806
+    },
+    {
+      "question": "What is the capital of Norfolk?",
+      "answer": "Norwich",
+      "entropy": 0.46737776492530986
+    },
+    {
+      "question": "What is Mariana Vicente's occupation?",
+      "answer": "actor",
+      "entropy": 0.25958971772186656
+    },
+    {
+      "question": "What is the capital of South Sudan?",
+      "answer": "Juba",
+      "entropy": 0.22970637916759298
+    },
+    {
+      "question": "What is the capital of Morris County?",
+      "answer": "Morristown",
+      "entropy": 0.13165318364032197
+    },
+    {
+      "question": "In what country is Stare Brz\u00f3ski?",
+      "answer": "Poland",
+      "entropy": 0.49924881231064655
+    },
+    {
+      "question": "What is Philadelphia the capital of?",
+      "answer": "United States of America",
+      "entropy": 0.06626601612512048
+    },
+    {
+      "question": "What is Reinhold Mack's occupation?",
+      "answer": "composer",
+      "entropy": 0.38334271465484243
+    },
+    {
+      "question": "Who was the director of Shaft?",
+      "answer": "John Singleton",
+      "entropy": 0.13165318364032197
+    },
+    {
+      "question": "What genre is The Experts?",
+      "answer": "comedy film",
+      "entropy": 0.19611262858587322
+    },
+    {
+      "question": "What genre is The Guardian?",
+      "answer": "horror film",
+      "entropy": 0.4203314440225806
+    },
+    {
+      "question": "What is the capital of Laos?",
+      "answer": "Vientiane",
+      "entropy": 0.18771208274619322
+    },
+    {
+      "question": "In what city was Alfred Jefferis Turner born?",
+      "answer": "Guangzhou",
+      "entropy": 0.36799977581601373
+    },
+    {
+      "question": "What is Jack Mackenzie's occupation?",
+      "answer": "civil engineer",
+      "entropy": 0.3883428384631453
+    },
+    {
+      "question": "What is the capital of Sri Lanka?",
+      "answer": "Colombo",
+      "entropy": 0.3875916510074576
+    },
+    {
+      "question": "What is Sala the capital of?",
+      "answer": "Sala Municipality",
+      "entropy": 0.38334271465484243
+    },
+    {
+      "question": "What is Frequency's occupation?",
+      "answer": "record producer",
+      "entropy": 0.3602048933722473
+    },
+    {
+      "question": "What genre is Buono! 2?",
+      "answer": "J-pop",
+      "entropy": 0.29888515475019534
+    },
+    {
+      "question": "What sport does Deportivo San Pedro play?",
+      "answer": "association football",
+      "entropy": 0.2749644013530656
+    },
+    {
+      "question": "What is Rodrigo Arocena's occupation?",
+      "answer": "mathematician",
+      "entropy": 0.32287946791896177
+    },
+    {
+      "question": "What genre is Philip Catherine?",
+      "answer": "jazz",
+      "entropy": 0.4903461272606373
+    },
+    {
+      "question": "What is Kamya Panjabi's occupation?",
+      "answer": "actor",
+      "entropy": 0.29888515475019534
+    },
+    {
+      "question": "Who is the author of Declaration?",
+      "answer": "Antonio Negri",
+      "entropy": 0.06626601612512048
+    },
+    {
+      "question": "What genre is Mother?",
+      "answer": "rock music",
+      "entropy": 0.3602048933722473
+    },
+    {
+      "question": "What genre is Anah\u00ed?",
+      "answer": "pop music",
+      "entropy": 0.4560350265374207
+    },
+    {
+      "question": "In what city was Neophyte of Bulgaria born?",
+      "answer": "Sofia",
+      "entropy": 0.32833384602029136
+    },
+    {
+      "question": "What genre is Impact?",
+      "answer": "thriller",
+      "entropy": 0.38334271465484243
+    },
+    {
+      "question": "What is J. Da Silva's occupation?",
+      "answer": "cricket umpire",
+      "entropy": 0.4473018004680598
+    },
+    {
+      "question": "In what country is United States District Court for the District of South Carolina?",
+      "answer": "United States of America",
+      "entropy": 0.24387628611564421
+    },
+    {
+      "question": "What color is fire engine?",
+      "answer": "red",
+      "entropy": 0.3653225753880296
+    },
+    {
+      "question": "What genre is Loaded?",
+      "answer": "hard rock",
+      "entropy": 0.4672083059446614
+    },
+    {
+      "question": "Who is the author of Nightmare Abbey?",
+      "answer": "Thomas Love Peacock",
+      "entropy": 0.4097593839388496
+    },
+    {
+      "question": "What is the capital of Turkey?",
+      "answer": "Ankara",
+      "entropy": 0.10851536235772687
+    },
+    {
+      "question": "Who was the screenwriter for The Naked Gun: From the Files of Police Squad!?",
+      "answer": "David Zucker",
+      "entropy": 0.4434692653051758
+    },
+    {
+      "question": "What sport does Olympique Lyonnais F\u00e9minin play?",
+      "answer": "association football",
+      "entropy": 0.33728406319895765
+    },
+    {
+      "question": "What is the religion of Ohio Northern University?",
+      "answer": "United Methodist Church",
+      "entropy": 0.2045808490873155
+    },
+    {
+      "question": "What sport does earned run average play?",
+      "answer": "baseball",
+      "entropy": 0.06626601612512048
+    },
+    {
+      "question": "What is the capital of French Guiana?",
+      "answer": "Cayenne",
+      "entropy": 0.2749644013530656
+    },
+    {
+      "question": "What is the capital of Somerset?",
+      "answer": "Taunton",
+      "entropy": 0.13165318364032197
+    },
+    {
+      "question": "What is Robert Gwilym's occupation?",
+      "answer": "actor",
+      "entropy": 0.34486195453341867
+    },
+    {
+      "question": "What is Bill Kintner's occupation?",
+      "answer": "politician",
+      "entropy": 0.4362579050290415
+    },
+    {
+      "question": "Who was the screenwriter for The Butler?",
+      "answer": "Lee Daniels",
+      "entropy": 0.23645189643927145
+    },
+    {
+      "question": "Who was the screenwriter for Rebecca?",
+      "answer": "Philip MacDonald",
+      "entropy": 0.3653225753880296
+    },
+    {
+      "question": "Who is the author of Hair?",
+      "answer": "Gerome Ragni",
+      "entropy": 0.32202297603279034
+    },
+    {
+      "question": "What is Dorothy Hewett's occupation?",
+      "answer": "playwright",
+      "entropy": 0.19611262858587322
+    },
+    {
+      "question": "What is the religion of Petwo?",
+      "answer": "Haitian Vodou",
+      "entropy": 0.38334271465484243
+    },
+    {
+      "question": "What is the religion of Milica Hrebeljanovi\u0107?",
+      "answer": "Serbian Orthodox Church",
+      "entropy": 0.23645189643927145
+    },
+    {
+      "question": "Who was the director of Emma?",
+      "answer": "Douglas McGrath",
+      "entropy": 0.1729748073032781
+    },
+    {
+      "question": "Who is the father of George Dance the Younger?",
+      "answer": "George Dance the Elder",
+      "entropy": 0.3370670720896523
+    },
+    {
+      "question": "What is the capital of Lesotho?",
+      "answer": "Maseru",
+      "entropy": 0.21612299755563047
+    },
+    {
+      "question": "In what country is Crow Harbour, New Brunswick?",
+      "answer": "Canada",
+      "entropy": 0.06626601612512048
+    },
+    {
+      "question": "Who is the father of Hera?",
+      "answer": "Cronus",
+      "entropy": 0.4097593839388496
+    },
+    {
+      "question": "Who was the screenwriter for The Wiz?",
+      "answer": "Joel Schumacher",
+      "entropy": 0.4203314440225806
+    },
+    {
+      "question": "What is Paul Caillaud's occupation?",
+      "answer": "politician",
+      "entropy": 0.32287946791896177
+    },
+    {
+      "question": "Who was the composer of Imagine?",
+      "answer": "John Lennon",
+      "entropy": 0.06626601612512048
+    },
+    {
+      "question": "What is Rodrigo Cort\u00e9s's occupation?",
+      "answer": "screenwriter",
+      "entropy": 0.36348374137365946
+    },
+    {
+      "question": "What is the capital of Guanabara?",
+      "answer": "Rio de Janeiro",
+      "entropy": 0.47234614404138486
+    },
+    {
+      "question": "In what country is Dragomirna River?",
+      "answer": "Romania",
+      "entropy": 0.4879060739561382
+    },
+    {
+      "question": "What genre is A Moment in Time?",
+      "answer": "romance film",
+      "entropy": 0.2988851547501953
+    },
+    {
+      "question": "Who was the composer of Hair?",
+      "answer": "Galt MacDermot",
+      "entropy": 0.45824039164349833
+    },
+    {
+      "question": "What genre is Gateway?",
+      "answer": "science fiction",
+      "entropy": 0.25958971772186656
+    },
+    {
+      "question": "Who is the father of Princess Alice of the United Kingdom?",
+      "answer": "Albert, Prince Consort",
+      "entropy": 0.32833384602029136
+    },
+    {
+      "question": "What sport does Wembley Lions play?",
+      "answer": "motorcycle speedway",
+      "entropy": 0.3602048933722474
+    },
+    {
+      "question": "What is the capital of Bhutan?",
+      "answer": "Thimphu",
+      "entropy": 0.22947169086902913
+    },
+    {
+      "question": "Who was the composer of Up?",
+      "answer": "Michael Giacchino",
+      "entropy": 0.4473018004680598
+    },
+    {
+      "question": "Who was the director of The Verdict?",
+      "answer": "Don Siegel",
+      "entropy": 0.0
+    },
+    {
+      "question": "What is Lilongwe the capital of?",
+      "answer": "Malawi",
+      "entropy": 0.3803283899247735
+    },
+    {
+      "question": "Who is the mother of Alexander the Great?",
+      "answer": "Olympias",
+      "entropy": 0.06626601612512048
+    },
+    {
+      "question": "What is the capital of Canton of Lucerne?",
+      "answer": "Lucerne",
+      "entropy": 0.2246568135445656
+    },
+    {
+      "question": "What genre is Shin?",
+      "answer": "rock music",
+      "entropy": 0.19611262858587322
+    },
+    {
+      "question": "Who is the father of Wayne Gretzky?",
+      "answer": "Walter Gretzky",
+      "entropy": 0.23645189643927145
+    },
+    {
+      "question": "What sport does Algiers Derby play?",
+      "answer": "association football",
+      "entropy": 0.06626601612512048
+    },
+    {
+      "question": "What genre is Reality?",
+      "answer": "rock music",
+      "entropy": 0.19611262858587322
+    },
+    {
+      "question": "What genre is Prince?",
+      "answer": "funk",
+      "entropy": 0.32287946791896177
+    },
+    {
+      "question": "What genre is Twelve?",
+      "answer": "teen film",
+      "entropy": 0.4203314440225806
+    },
+    {
+      "question": "What is the capital of Basel-Landschaft?",
+      "answer": "Liestal",
+      "entropy": 0.2246568135445656
+    },
+    {
+      "question": "What is the capital of Georgia?",
+      "answer": "Tbilisi",
+      "entropy": 0.06626601612512048
+    },
+    {
+      "question": "Who is the author of The Stand?",
+      "answer": "Stephen King",
+      "entropy": 0.0
+    },
+    {
+      "question": "What is the capital of Novgorod Republic?",
+      "answer": "Veliky Novgorod",
+      "entropy": 0.23137821309299753
+    },
+    {
+      "question": "What is Everley Gregg's occupation?",
+      "answer": "actor",
+      "entropy": 0.3922929318335087
+    },
+    {
+      "question": "Who was the director of Heroes?",
+      "answer": "Jeremy Kagan",
+      "entropy": 0.18771208274619322
+    },
+    {
+      "question": "In what country is Usinskoe mine?",
+      "answer": "Russia",
+      "entropy": 0.32202297603279034
+    },
+    {
+      "question": "What is Kazuyoshi Sekine's occupation?",
+      "answer": "playwright",
+      "entropy": 0.0
+    },
+    {
+      "question": "In what country is Leme?",
+      "answer": "Brazil",
+      "entropy": 0.494999876024793
+    },
+    {
+      "question": "Who was the screenwriter for Election?",
+      "answer": "Alexander Payne",
+      "entropy": 0.06626601612512048
+    },
+    {
+      "question": "Who was the screenwriter for The Game?",
+      "answer": "Joey Murphy",
+      "entropy": 0.19611262858587322
+    },
+    {
+      "question": "Who is the father of Umm Kulthum bint Ali ibn Abi Talib?",
+      "answer": "Al\u012b ibn Ab\u012b \u1e6c\u0101lib",
+      "entropy": 0.06626601612512048
+    },
+    {
+      "question": "What is the capital of Kingdom of France?",
+      "answer": "Paris",
+      "entropy": 0.10851536235772687
+    },
+    {
+      "question": "What is the capital of Brunei?",
+      "answer": "Bandar Seri Begawan",
+      "entropy": 0.2045808490873155
+    },
+    {
+      "question": "What color is Manchester United F.C.?",
+      "answer": "red",
+      "entropy": 0.2907914294910812
+    },
+    {
+      "question": "What is Athens the capital of?",
+      "answer": "Henderson County",
+      "entropy": 0.10851536235772687
+    },
+    {
+      "question": "What genre is Sarah Cracknell?",
+      "answer": "pop music",
+      "entropy": 0.4473018004680598
+    },
+    {
+      "question": "What is Yannis Ritsos's occupation?",
+      "answer": "poet",
+      "entropy": 0.14110375995132216
+    },
+    {
+      "question": "What genre is The Simple Life?",
+      "answer": "reality television",
+      "entropy": 0.10851536235772687
+    },
+    {
+      "question": "What is Tsu the capital of?",
+      "answer": "Tsu Domain",
+      "entropy": 0.4791728478200158
+    },
+    {
+      "question": "What is the capital of Montenegro?",
+      "answer": "Podgorica",
+      "entropy": 0.06626601612512048
+    },
+    {
+      "question": "What genre is Magic?",
+      "answer": "soap opera",
+      "entropy": 0.38334271465484243
+    },
+    {
+      "question": "Who is the father of Urraca of Castile?",
+      "answer": "Alfonso VIII",
+      "entropy": 0.34486195453341856
+    },
+    {
+      "question": "Who was the composer of The Chipmunk Song?",
+      "answer": "Ross Bagdasarian",
+      "entropy": 0.26701410739823933
+    },
+    {
+      "question": "In what country is Katmai National Park and Preserve?",
+      "answer": "United States of America",
+      "entropy": 0.48790607395613816
+    },
+    {
+      "question": "Who is the father of James I of Scotland?",
+      "answer": "Robert III of Scotland",
+      "entropy": 0.29888515475019534
+    },
+    {
+      "question": "Who was the director of The Sting?",
+      "answer": "George Roy Hill",
+      "entropy": 0.4074487146025731
+    },
+    {
+      "question": "What is the religion of Gautama Buddha?",
+      "answer": "Buddhism",
+      "entropy": 0.13165318364032197
+    },
+    {
+      "question": "Who was the composer of Gleichwie der Regen und Schnee vom Himmel f\u00e4llt, BWV 18?",
+      "answer": "Johann Sebastian Bach",
+      "entropy": 0.2907914294910813
+    },
+    {
+      "question": "What is the capital of Puerto Rico?",
+      "answer": "San Juan",
+      "entropy": 0.06626601612512048
+    },
+    {
+      "question": "What genre is Studio?",
+      "answer": "electronic music",
+      "entropy": 0.13165318364032197
+    },
+    {
+      "question": "Who was the producer of Friends?",
+      "answer": "Marta Kauffman",
+      "entropy": 0.10851536235772687
+    },
+    {
+      "question": "What is the capital of Albania?",
+      "answer": "Tirana",
+      "entropy": 0.06626601612512048
+    },
+    {
+      "question": "What is Delhi the capital of?",
+      "answer": "Tughlaq dynasty",
+      "entropy": 0.0
+    },
+    {
+      "question": "Who is the father of Li Xian?",
+      "answer": "Emperor Gaozong of Tang",
+      "entropy": 0.4999999997663343
+    },
+    {
+      "question": "What genre is Jason Moran?",
+      "answer": "jazz",
+      "entropy": 0.26701410739823933
+    },
+    {
+      "question": "Who was the director of Taken?",
+      "answer": "Pierre Morel",
+      "entropy": 0.4194626983594137
+    },
+    {
+      "question": "Who was the screenwriter for Enough Said?",
+      "answer": "Nicole Holofcener",
+      "entropy": 0.06626601612512048
+    },
+    {
+      "question": "Who is the father of Franklin Richards?",
+      "answer": "Mister Fantastic",
+      "entropy": 0.3971936227399856
+    },
+    {
+      "question": "What is the religion of Marian University?",
+      "answer": "Catholic Church",
+      "entropy": 0.0
+    },
+    {
+      "question": "What is Providence the capital of?",
+      "answer": "Rhode Island",
+      "entropy": 0.06626601612512048
+    },
+    {
+      "question": "In what country is Jinhua railway station?",
+      "answer": "People's Republic of China",
+      "entropy": 0.14110375995132216
+    },
+    {
+      "question": "In what country is Upper Midwest forest-savanna transition?",
+      "answer": "United States of America",
+      "entropy": 0.45847507990868136
+    },
+    {
+      "question": "What is Thomas McMurtry's occupation?",
+      "answer": "test pilot",
+      "entropy": 0.4672083059446614
+    },
+    {
+      "question": "Who was the screenwriter for Crash?",
+      "answer": "David Cronenberg",
+      "entropy": 0.4434692653051758
+    },
+    {
+      "question": "What genre is Neighbours?",
+      "answer": "pixilation",
+      "entropy": 0.25958971772186656
+    },
+    {
+      "question": "What genre is Ark?",
+      "answer": "hard science fiction",
+      "entropy": 0.38846039667062465
+    },
+    {
+      "question": "In what country is Troy?",
+      "answer": "United States of America",
+      "entropy": 0.26701410739823933
+    },
+    {
+      "question": "What is the capital of Kingdom of Italy?",
+      "answer": "Rome",
+      "entropy": 0.10851536235772687
+    }
+  ]
+}
