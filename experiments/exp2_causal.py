@@ -49,7 +49,7 @@ def run_exp2(
     sae = load_sae(peak_layer, SAE_RELEASE, SAE_IDS[peak_layer])
 
     pairs_to_test = top_pairs[:2] if debug else top_pairs[:20]
-    test_prompts = ambiguous_prompts[:4] if debug else ambiguous_prompts
+    test_prompts = ambiguous_prompts[:4] if debug else ambiguous_prompts[:50]
 
     checkpoint_path = os.path.join(results_dir, "exp2_checkpoint.pkl")
 
