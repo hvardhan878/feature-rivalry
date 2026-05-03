@@ -102,7 +102,15 @@ def run_exp2(
 
             def hook(module, input, output):
                 steered = output[0].clone()
-                steered[0, -1, :] += multiplier * vec_tensor
+                # Gemma2 / some paths return (B, T, D); others (T, D) with batch folded.
+                if steered.ndim == 3:
+                    steered[0, -1, :] += multiplier * vec_tensor
+                elif steered.ndim == 2:
+                    steered[-1, :] += multiplier * vec_tensor
+                else:
+                    raise ValueError(
+                        f"Unexpected hidden_states rank {steered.ndim}, shape {steered.shape}"
+                    )
                 return (steered,) + output[1:]
 
             return hook
