@@ -10,19 +10,50 @@ from model.hooks import ActivationCache
 from sae.gemma_scope import get_feature_activations, load_sae
 
 
-def _per_prompt_rivalry_score(sae, hidden_last_token: np.ndarray) -> float:
+def _per_prompt_rivalry_score(sae, hidden_last_token: np.ndarray, top_k: int = 50) -> float:
     """
-    Compute rivalry score from last token hidden state only.
-    Uses entropy of active SAE feature activations as proxy for feature competition.
-    Higher entropy = more features competing = more rivalry.
+    Compute per-prompt rivalry score from last token hidden state.
+    Takes top-k most active SAE features and computes 5th percentile
+    of their pairwise correlations — mirrors Exp 1 population measure
+    but applied per-prompt.
+    Lower (more negative) = more rivalry = more uncertainty.
     """
     feat_acts = get_feature_activations(sae, hidden_last_token)
-    active = feat_acts[feat_acts > 0.01]
-    if len(active) == 0:
+
+    # Get top-k most active features
+    active_mask = feat_acts > 0.01
+    active_indices = np.where(active_mask)[0]
+
+    if len(active_indices) < 2:
         return 0.0
-    probs = active / active.sum()
-    entropy = -np.sum(probs * np.log(probs + 1e-10))
-    return float(entropy)
+
+    # Sort by activation strength and take top-k
+    if len(active_indices) > top_k:
+        top_indices = active_indices[np.argsort(feat_acts[active_indices])[-top_k:]]
+    else:
+        top_indices = active_indices
+
+    if len(top_indices) < 2:
+        return 0.0
+
+    # Get decoder vectors for top-k features
+    # Shape: (n_active, hidden_dim)
+    decoder_vecs = sae.W_dec[top_indices].detach().float().numpy()
+
+    # Compute pairwise cosine similarities between decoder vectors
+    # This measures how much the active concepts compete in representation space
+    norms = np.linalg.norm(decoder_vecs, axis=1, keepdims=True)
+    norms = np.where(norms == 0, 1e-10, norms)
+    normalized = decoder_vecs / norms
+    corr_matrix = normalized @ normalized.T
+
+    upper_idx = np.triu_indices_from(corr_matrix, k=1)
+    upper = corr_matrix[upper_idx]
+
+    if upper.size == 0:
+        return 0.0
+
+    return float(np.percentile(upper, 5))
 
 
 def run_exp3(
@@ -96,7 +127,7 @@ def run_exp3(
                 rivalry_score = 0.0
             else:
                 last_token_hidden = hidden_seq[-1] if hidden_seq.ndim == 2 else hidden_seq[0, -1]
-                rivalry_score = _per_prompt_rivalry_score(sae, last_token_hidden)
+                rivalry_score = _per_prompt_rivalry_score(sae, last_token_hidden, top_k=50)
 
         with torch.no_grad():
             gen_out = model.generate(

@@ -49,7 +49,7 @@ def run_exp2(
     sae = load_sae(peak_layer, SAE_RELEASE, SAE_IDS[peak_layer])
 
     pairs_to_test = top_pairs[:2] if debug else top_pairs[:20]
-    test_prompts = ambiguous_prompts[:4] if debug else ambiguous_prompts[:50]
+    test_prompts = ambiguous_prompts[:4] if debug else ambiguous_prompts
 
     checkpoint_path = os.path.join(results_dir, "exp2_checkpoint.pkl")
 
@@ -85,8 +85,10 @@ def run_exp2(
                 if not (r["feature_i"] == feat_A and r["feature_j"] == feat_B)
             ]
 
-        # Decoder direction for feature B — the "concept vector" in residual-stream space
-        vec_B = sae.W_dec[feat_B].detach().float().numpy()  # (hidden_dim,)
+        vec_A = sae.W_dec[feat_A].detach().float().numpy()
+        vec_B = sae.W_dec[feat_B].detach().float().numpy()
+        vec_rivalry = vec_A - vec_B
+        vec_rivalry = vec_rivalry / np.linalg.norm(vec_rivalry)
 
         # Random baseline direction (unit-normalised)
         random_vecs = [np.random.randn(HIDDEN_DIM).astype(np.float32) for _ in range(10)]
@@ -100,7 +102,7 @@ def run_exp2(
 
             def hook(module, input, output):
                 steered = output[0].clone()
-                steered[0, :, :] += multiplier * vec_tensor
+                steered[0, -1, :] += multiplier * vec_tensor
                 return (steered,) + output[1:]
 
             return hook
@@ -132,7 +134,7 @@ def run_exp2(
 
                 # --- Steered-B generation ---
                 handle = model.model.layers[peak_layer].register_forward_hook(
-                    make_steer_hook(vec_B, mult)
+                    make_steer_hook(vec_rivalry, mult)
                 )
                 try:
                     with torch.no_grad():
