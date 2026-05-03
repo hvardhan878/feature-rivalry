@@ -101,8 +101,14 @@ def run_exp2(
             vec_tensor = torch.from_numpy(vec_numpy).float().to("cuda")
 
             def hook(module, input, output):
-                steered = output[0].clone()
-                # Gemma2 / some paths return (B, T, D); others (T, D) with batch folded.
+                # Gemma2 layers may return a raw Tensor or a tuple whose first element
+                # is the hidden-state Tensor.
+                if isinstance(output, torch.Tensor):
+                    hidden = output
+                else:
+                    hidden = output[0]
+
+                steered = hidden.clone()
                 if steered.ndim == 3:
                     steered[0, -1, :] += multiplier * vec_tensor
                 elif steered.ndim == 2:
@@ -111,6 +117,9 @@ def run_exp2(
                     raise ValueError(
                         f"Unexpected hidden_states rank {steered.ndim}, shape {steered.shape}"
                     )
+
+                if isinstance(output, torch.Tensor):
+                    return steered
                 return (steered,) + output[1:]
 
             return hook
