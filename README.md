@@ -4,11 +4,29 @@ Experiments on feature-level rivalry in Gemma-2-2B using Gemma Scope SAEs.
 
 ## Setup
 
-**1. Clone and install**
+**1. Clone**
 
 ```bash
 git clone https://github.com/YOUR_USER/feature_rivalry.git
 cd feature_rivalry
+```
+
+**Paperspace Gradient:** after each fresh machine / image reset:
+
+```bash
+cp .env.example .env
+# edit .env — set HF_TOKEN=... (read token from Hugging Face)
+chmod +x setup_paperspace.sh
+./setup_paperspace.sh
+```
+
+Alternatively: `export HF_TOKEN=hf_...` then run `./setup_paperspace.sh`.
+
+The script pins PyTorch to `2.5.1+cu121`, fixes NumPy, sets `LD_LIBRARY_PATH` for bundled CUDA libs, runs `huggingface-cli login`, and installs deps from `requirements.txt`. **Never commit `.env`** (it is gitignored).
+
+**Other environments:** install manually:
+
+```bash
 pip install -r requirements.txt
 ```
 
