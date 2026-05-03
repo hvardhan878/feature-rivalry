@@ -29,10 +29,14 @@ def run_exp2(
     measure how often the model's output changes compared to baseline (and versus
     a random steering direction), for steering multipliers 5, 10, and 20.
     """
-    # Find the layer with the strongest rivalry (most negative p5)
-    peak_layer = min(
+    # Layer where ambiguous rivalry is strongest relative to unambiguous:
+    # max_l (unambiguous p5 - ambiguous p5)
+    peak_layer = max(
         exp1_results["ambiguous"].keys(),
-        key=lambda l: exp1_results["ambiguous"][l]["p5"],
+        key=lambda l: (
+            exp1_results["unambiguous"][l]["p5"]
+            - exp1_results["ambiguous"][l]["p5"]
+        ),
     )
     print(f"Peak rivalry layer: {peak_layer}")
 
@@ -85,7 +89,9 @@ def run_exp2(
         vec_B = sae.W_dec[feat_B].detach().float().numpy()  # (hidden_dim,)
 
         # Random baseline direction (unit-normalised)
-        vec_random = np.random.randn(HIDDEN_DIM).astype(np.float32)
+        random_vecs = [np.random.randn(HIDDEN_DIM).astype(np.float32) for _ in range(10)]
+        random_vecs = [v / np.linalg.norm(v) for v in random_vecs]
+        vec_random = np.mean(random_vecs, axis=0).astype(np.float32)
         vec_random = vec_random / np.linalg.norm(vec_random)
 
         def make_steer_hook(vec_numpy, multiplier: float):
