@@ -5,44 +5,24 @@ import numpy as np
 import torch
 from tqdm import tqdm
 
-from analysis.rivalry_score import compute_rivalry_score
 from config import LAYERS_TO_ANALYZE, SAE_IDS, SAE_RELEASE
 from model.hooks import ActivationCache
 from sae.gemma_scope import get_feature_activations, load_sae
 
 
-def _per_prompt_rivalry_from_seq_hidden(sae, hidden_seq: np.ndarray) -> float:
+def _per_prompt_rivalry_score(sae, hidden_last_token: np.ndarray) -> float:
     """
-    hidden_seq: (seq_len, hidden_dim) last-layer hidden states for one prompt.
-    Returns 5th percentile of pairwise correlations of active SAE features (max act > 0.01),
-    correlating across sequence positions (same construction as Exp 1, one prompt).
+    Compute rivalry score from last token hidden state only.
+    Uses entropy of active SAE feature activations as proxy for feature competition.
+    Higher entropy = more features competing = more rivalry.
     """
-    seq_len = hidden_seq.shape[0]
-    if seq_len < 2:
+    feat_acts = get_feature_activations(sae, hidden_last_token)
+    active = feat_acts[feat_acts > 0.01]
+    if len(active) == 0:
         return 0.0
-
-    feat_rows = []
-    for t in range(seq_len):
-        feat_rows.append(get_feature_activations(sae, hidden_seq[t]))
-    matrix = np.stack(feat_rows, axis=0)  # (seq_len, n_features)
-
-    active_mask = matrix.max(axis=0) > 0.01
-    active_indices = np.where(active_mask)[0]
-
-    if len(active_indices) > 300:
-        rng = np.random.default_rng(42)
-        active_indices = rng.choice(active_indices, 300, replace=False)
-
-    if len(active_indices) < 2:
-        return 0.0
-
-    active_matrix = matrix[:, active_indices]
-    corr_matrix = np.corrcoef(active_matrix.T)
-    upper_idx = np.triu_indices_from(corr_matrix, k=1)
-    upper = corr_matrix[upper_idx]
-    if upper.size == 0:
-        return 0.0
-    return compute_rivalry_score(upper)
+    probs = active / active.sum()
+    entropy = -np.sum(probs * np.log(probs + 1e-10))
+    return float(entropy)
 
 
 def run_exp3(
@@ -61,7 +41,16 @@ def run_exp3(
     """
     from sklearn.metrics import roc_auc_score
 
-    test_prompts = ambiguous_prompts[:8] if debug else ambiguous_prompts
+    if debug:
+        test_prompts = ambiguous_prompts[:4] + exp1_results.get("unambiguous_prompts", [])[:4]
+    else:
+        import json
+
+        splits_path = os.path.join(results_dir, "dataset_splits.json")
+        with open(splits_path) as f:
+            splits = json.load(f)
+        unambiguous_prompts = splits["unambiguous"]
+        test_prompts = ambiguous_prompts + unambiguous_prompts
 
     peak_layer = max(
         exp1_results["ambiguous"].keys(),
@@ -106,7 +95,8 @@ def run_exp3(
             if hidden_seq is None:
                 rivalry_score = 0.0
             else:
-                rivalry_score = _per_prompt_rivalry_from_seq_hidden(sae, hidden_seq)
+                last_token_hidden = hidden_seq[-1] if hidden_seq.ndim == 2 else hidden_seq[0, -1]
+                rivalry_score = _per_prompt_rivalry_score(sae, last_token_hidden)
 
         with torch.no_grad():
             gen_out = model.generate(
